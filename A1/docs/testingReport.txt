@@ -1,0 +1,47 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~TESTING STACK MODULE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The only alteration to the Stack ADT from Lab 03 was that peek() was changed from void to int.
+
+To test the ADT and how they work in cohesion I'm testing each function with a different array of values ranging from big to very small. Also an empty array.
+
+I tested for a normal array and numbers
+	-In this test I tested the function when the list was empty
+		-All functions said that they were NULL
+	-Tested the functions when the array was filled with elements
+		-The results happened as expected
+
+		createStack(): created the stack using createList() from List ADT
+		push(): pushed elements onto the stack correctly
+		pop(): popped the element from the top of the stack correctly
+		peek(): returned the top element correctly as a list
+		theStack->len: was in the struct. Incremeneted when pushed and decremented when popped: Length printed correctly.
+		destroyStack(): makes everything NULL and destroys from the List ADT
+
+Also tested for:
+	-Negative
+	-NULL
+	-Destroy
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TESTING MAZE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tested the maze, could not solve.
+Used the Right Hand Algorithm. But, when at intersection, it loops forever. 
+	-Tracked by printing the stack
+
+If the maze was smaller than 10x10 then it would solve (also would have to be straightforward)
+	Other than that it gets to a point where it is stuck, could not figure it out
+
+Prints the path where it has visited and it does backtrack, but it's just that loop.
+
+Bigger the size, less v's it will print out.
+
+
+USED SITES FOR REFERENCE:
+
+http://stackoverflow.com/questions/23002935/java-implementation-of-right-hand-rule-maze-solver-algorithm
+http://en.wikipedia.org/wiki/Maze_solving_algorithm
+http://courses.cs.washington.edu/courses/cse373/02wi/slides/BinSortEtc/sld024.htm
+http://stackoverflow.com/questions/23769169/escaping-the-prison-finding-the-shortest-way
+http://stackoverflow.com/questions/3097556/programming-theory-solve-a-maze
+
