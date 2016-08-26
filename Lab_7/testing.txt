@@ -1,0 +1,32 @@
+RESULTS
+
+   testing array size of 5000
+Iterative time taken in seconds: 0
+Recursive time taken in seconds: 0
+
+   testing array size of 15000
+Iterative time taken in seconds: 1
+Recursive time taken in seconds: 1
+
+   testing array size of 25000
+Iterative time taken in seconds: 4
+Recursive time taken in seconds: 6
+
+   testing array size of 50000
+Iterative time taken in seconds: 18
+Recursive time taken in seconds: 25
+
+   testing array size of 75000
+Iterative time taken in seconds: 40
+Recursive time taken in seconds: 66
+
+   testing array size of 100000
+Iterative time taken in seconds: 72
+Recursive time taken in seconds: 139
+
+
+In terms of efficieny, it seems as if the iterative approach would be best. As the arrays go >75000 the recursive function takes almost half the time more to complete. I believe that the iterative approach would be much more efficient. The performance is faster. Recursion is used to break down big things into smaller problems such as powers. Sorting is not really, in my opinion, a big problem that needs to be broken down. Especially with bubble sort. Bubble sort goes through the elements and keeps swapping until it is in the right positon; until another element comes. It is really a repetitive process that would go much quicker with the iterative approach. Doing it recurisvely, I find uses too much memory unless you were doing a search of some type. 
+
+The functions could not handle when I reached 1 million data items. The loop never ended. 
+
+To my knowledge, an array of short ints is almost the same as an int so it should not make a big significant difference

@@ -1,0 +1,27 @@
+****************************************************
+Vanessa White		0832498
+CIS2520    			Lab 1
+May 16th, 2014
+****************************************************
+
+
+************
+Compilation
+************
+In the gcc complier, cd to Lab1WhiteVanessa/. 
+Then, type in make to compile.
+
+***********************
+Running the program(s)
+***********************
+Type in bin/lab1runnable to run the program.
+
+All 8 test cases will show up showing the results
+
+NOTE: Some test cases in main.c are commented out. This is because upon failure the program will EXIT so for testing those cases, please uncomment them. For accessibility, they are at the bottom of the program.
+
+*****************
+Known Limitations
+*****************
+Currently, does not block against decimals. Integers round off decimals.
+If user input was taken, this could have been an easy fix, but for the purpose of this Lab, this was not conducted.

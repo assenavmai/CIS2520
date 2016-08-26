@@ -1,0 +1,10 @@
+Answer to Lab 1, Part 2:
+
+Definition given: A fraction is a number a/b where a,b are integers, b is non-zero and the greatest common denominator of (a, b) is 1.
+
+What this is saying that it is a fraction if and only if it is in its lowest terms.
+
+In part 2, 1/2 is considered as a fraction but if it were 2/4, this is not considered a fraction because it is not in its lowest terms. The greatest common denominator of 2/4 is 2, not 1.
+
+You do not have to worry about negatives for GCD because in the algorithm to find it, you remove all negatives.
+There can be no GCD of 0 because then the fraction is not valid.

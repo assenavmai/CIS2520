@@ -1,0 +1,55 @@
+createFraction(numerator, denominator): Fraction
+ 
+    preconditions: none
+ 
+    postconditions: a fraction is created with the appropiate numerator and denominator
+        if there was no memory malloced properly, it will return NULL
+        if the denominator entered is 0 the program will exit
+ 
+getNumerator(Fraction): int
+ 
+    preconditions: an initialized Fraction is given as the parameter
+ 
+    postconditions: if the fraction that is passed in is NULL, the program will exit
+ 
+getDenominator(Fraction): int
+ 
+    preconditions: an initialized Fraction is given as the parameter
+ 
+    postconditions: if the fraction that is passed in is NULL or has a denominator of 0 the program will exit
+ 
+destroyFraction(Fraction)
+ 
+    preconditons: the parameter Fraction is initialized
+ 
+    postconditions: the fraction is destroyed and memory released if necessary
+ 
+add(Fraction, Fraction): Fraction
+ 
+    preconditions: two initialized fractions are passed in as parameters
+ 
+    postconditions: the two fractions are added together and the result is placed in a new Fraction variable that is returned to the calling procedure
+
+multiply(Fraction, Fraction): Fraction
+ 
+    preconditions: two initialized fractions are passed in as parameters
+ 
+    postconditions: the two fractions are multiplied together and the result is placed in a new Fraction variable that is returned to the calling procedure
+
+GCD(numerator, denominator): int
+
+    preconditons: two integers are passed in as parameters
+
+    postconditions: the two integers passed in are then used to find a common denominator
+
+simplify(Fraction * theFraction): void
+
+    preconditions: the parameter Fraction is initialized
+
+    postconditions: Fraction is simplified into its lowest terms
+
+printFraction(Fraction * toPrint): void
+
+    preconditions: the parameter of the Fraction to be printed is initialized
+
+    postconditions: Fraction is printed when it  meets one of the conditions

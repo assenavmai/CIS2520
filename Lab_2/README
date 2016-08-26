@@ -1,0 +1,51 @@
+****************************************************
+Vanessa White		0832498
+CIS2520    			Lab 2
+May 23rd, 2014
+****************************************************
+
+
+************
+Compilation
+************
+In the gcc complier, cd to Lab2WhiteVanessa/. 
+Then, type in make to compile.
+
+***********************
+Running the program(s)
+***********************
+Type in bin/lab2 to run the program.
+
+It will then run lab2main.c with testing in it.
+
+***********************
+Testing the program(s)
+***********************
+Simply, I created an array and then made a Node * value.
+I used this value to create a list.
+    -Called all the functions made after creating this EMPTY list
+    -All the functions outputted that the list was empty so it could not do anything
+    -getLength() reported the length of the list was 0
+
+I then proceeded to test for addToFront. I used a for loop to add each element in the stack array to the front
+Then I printed the list.
+
+Got the length of the list: printed correctly.
+Removed the head of the list: printed correctly.
+Tested the length again: it decremented.
+Got the head of the list: printed correctly.
+
+If inserted bigger numbers, the functions worked correctly.
+
+If inputed NULL into functions it will print out that the list is NULL or some functions won't compile with it.
+
+tested with rather larger negative numbers: everything outputted correctly.
+
+Leaving parameters out of functions created in lab2.c will result in a compiler error. Or replaces the values for some functions to NULL (addToFront).
+
+tested when I getFront() that the list still remains intact.
+*****************
+Known Limitations
+*****************
+When the array size is set to [1] and not initialized it will print a junk number when adding to front. Counts this as an element in the list so length = 1. After that though, reads list as empty.
+

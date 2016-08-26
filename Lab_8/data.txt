@@ -1,0 +1,17 @@
+Tim Hortons, Donuts, 3
+Applebees, Burgers, 5
+iHop, Sweets, 5
+Mary Browns, Fried Chicken, 2
+Moxies, Grill, 5
+KFC, Fried Chicken, 1
+The Keg, Grill, 5
+McDonalds, Fast Food, 2
+Jamaica House, Jamaican Food, 1
+Five Guys, Burgers, 5
+Wild Wings, Chicken Wings, 1
+The Cheesecake Factory, Variety, 5
+Pizza Pizza, Pizza, 2
+Heritage Fish & Chips, British, 3
+T.G.I Fridays, Burgers, 5
+Buffalo Wild Wings, Chicken Wings, 5
+The Burger Priest, Burgers, 4
