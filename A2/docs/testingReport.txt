@@ -1,0 +1,83 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TESTING HASH TABLE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tested each function for errors and crashes. Opened a file called directory.txt that was loaded with Given Names, Surnames and Phone Numbers. The Hash ADT was customized for this assignment.
+
+-If the file was empty, the whole program exitied -> CORRECT OUTPUT
+
+create():
+    Tested for a size of a table less than 1 -> gave an error output and exited the program -> CORRECT OUTPUT
+    (end testing)
+
+calculateTableSize():
+    Simple function. Tested that the table size is correctly 2/3 of the data size -> CORRECT OUTPUT
+
+fillTable():
+    If the table is null, it should not fill anything and exit -> CORRECT OUTPUT
+    If the table was not null, it should fill the table up -> to check that the table filled, use printTable() -> CORRECT OUTPUT
+
+printTable():
+    If the table is null, error output should print -> CORRECT OUTPUT
+    If the table is not null, print out the table using printList() from Linked List ADT -> CORRECT OUTPUT
+
+lookup():
+    If the phone number entered was found in the list, only the FIRST NAME and LAST NAME of the person was printed -> CORRECT OUTPUT
+    If the phone number entered was not found in the list, print out an unsuccessful message -> CORRECT OUTPUT
+
+deleteValue():
+    If the value is in the table it should be deleted -> INCORRECT OUTPUT -> shows garbage values at that spot in the table
+    If it is not in the table, it should print out an error message -> CORRECT OUTPUT
+
+update():
+    If the user enters a number that does not exits, print error message -> CORRECT
+    If it is located in the table, change the name -> CORRECT OUTPUT
+
+hashFunc():
+    Specs on the function:
+    Collisions:
+    Table Size:
+    Cells Used:
+    (Code to find these specs listed below)
+
+insert():
+    Tested to see if a single entry can be added -> CORRECT OUTPUT
+        this function was used in the fillTable function, tested.
+
+reverseLookup():
+    Calls the lookup() function
+        tested since lookup() works -> function to reduce code
+
+destroyTable():
+    if it null, don't destroy -> CORRECT OUT
+    printed after destroying to see if it is empty -> CORRECT OUTPUT
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TESTING MAIN PROGRAM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Hash Table ADT and Linked List ADT was tested throughly. All that needed to be tested was the menu and helper functions
+
+openFile():
+    opens the file if it is not null -> CORRECT
+    if the file is null it returned null -> CORRECT
+
+MENU: NOTE ***** this is a looping menu
+    -When user entered invalid input for the options -> prompts them to try again -> CORRECT
+
+    option 1: loading the file
+        -if they enter an invalid file name -> says its invalid and goes back to menu -> CORRECT
+        -if they enter an empty file -> invalid and goes back to menu -> CORRECT
+        -if they enter a correct file it will be loaded -> CORRECT
+
+    option 2: add single entry
+        -if there is no directory in storage -> show error and go back to menu for another option -> CORRECT
+        -if there is a file in storage -> it will add the person correctly -> CORRECT 
+
+    option 3: print list
+        -if there is a directory stored, the list will print -> CORRECT 
+        -if there is no directory loaded, it will be unsuccessful and return to the menu -> CORRECT
+
+    option 4: Reverse lookup
+        -if the directory is not stored -> it will print an error and go back to menu -> CORRECT
+        -if there is a directory and the person is found it will print out the persons name -> CORRECT
+        -if the person is not found it will print an error message and go back to menu -> CORRECT
+
+    option 5: Quit
+        -if user enters this program will end -> CORRECT

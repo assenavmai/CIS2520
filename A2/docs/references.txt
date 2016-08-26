@@ -1,0 +1,3 @@
+Websites:
+http://eternallyconfuzzled.com/tuts/datastructures/jsw_tut_hashtable.aspx
+http://www.ehow.com/how_2056293_create-binary-tree-c.html - help with associative arrays

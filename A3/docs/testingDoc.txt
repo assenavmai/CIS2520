@@ -1,0 +1,26 @@
+__________________AVL
+
+Tested all the main functions - create, remove, add, isInTree and destroy.
+    All tests were successful - bstMain.c located in src
+Tests for NULL in the functions and such.
+
+____________________FILE
+
+Tested fot the fucntion remove() and rename().
+Also opendir() and readdir()
+
+Everything worked perfectly, results happened smoothly. 
+
+
+______________FILEMANAGER
+
+
+    getPath()
+An issue I had was when I was searching it would go over the bounds of the tree.
+- FIXED add if statement to check if the left and right were null. 
+
+    openDirectories()
+        only can store one file per directory
+            tried to change the way it was stored to the struct but failed. - not fixed
+
+Everything else worked smoothly in the file manager.....MENU was taken from Assignment 2 so it was thourougly tested there.
